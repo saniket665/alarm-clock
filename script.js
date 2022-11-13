@@ -64,7 +64,7 @@ function setNewAlarm(alarmDate) {
     div.setAttribute("class", "alarm");
     div.setAttribute("key", idx);
     div.innerHTML = `<p>${alarmHr}:${alarmMin}</p>
-    <span>${weeks[alarmDay].slice(0, 3)}, ${alarmDate2} ${months[alarmMonth]}</span>
+    <span>${weeks[alarmDay]}, ${alarmDate2} ${months[alarmMonth]}</span>
     <div class="delete-icon"><i class="fa-solid fa-trash"></i></div>`
     let deleteIcon = div.querySelector(".delete-icon");
     addClickEvent(deleteIcon);
